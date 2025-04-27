@@ -1,0 +1,72 @@
+[debug] [2025-04-27T09:49:41.696Z] ----------------------------------------------------------------------
+[debug] [2025-04-27T09:49:41.700Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2025-04-27T09:49:41.700Z] CLI Version:   14.2.0
+[debug] [2025-04-27T09:49:41.700Z] Platform:      win32
+[debug] [2025-04-27T09:49:41.701Z] Node Version:  v20.18.3
+[debug] [2025-04-27T09:49:41.701Z] Time:          Sun Apr 27 2025 15:19:41 GMT+0530 (India Standard Time)
+[debug] [2025-04-27T09:49:41.701Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-27T09:49:42.105Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-27T09:49:42.106Z] > authorizing via signed-in user (mangeshgautam07@gmail.com)
+[debug] [2025-04-27T09:49:42.106Z] [iam] checking project learning-5dd15 for permissions ["firebase.projects.get"]
+[debug] [2025-04-27T09:49:42.109Z] Checked if tokens are valid: false, expires at: 1745741527471
+[debug] [2025-04-27T09:49:42.109Z] Checked if tokens are valid: false, expires at: 1745741527471
+[debug] [2025-04-27T09:49:42.110Z] > refreshing access token with scopes: []
+[debug] [2025-04-27T09:49:42.114Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-27T09:49:42.115Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-27T09:49:42.439Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-04-27T09:49:42.440Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-27T09:49:42.463Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/learning-5dd15:testIamPermissions [none]
+[debug] [2025-04-27T09:49:42.464Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/learning-5dd15:testIamPermissions x-goog-quota-user=projects/learning-5dd15
+[debug] [2025-04-27T09:49:42.465Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/learning-5dd15:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-27T09:49:44.035Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/learning-5dd15:testIamPermissions 200
+[debug] [2025-04-27T09:49:44.036Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/learning-5dd15:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-27T09:49:44.083Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-04-27T09:49:44.159Z] defaultcredentials: writing to file C:\Users\dell\AppData\Roaming\firebase\mangeshgautam07_gmail_com_application_default_credentials.json
+[debug] [2025-04-27T09:49:44.165Z] DEBUG: Setting GAC to C:\Users\dell\AppData\Roaming\firebase\mangeshgautam07_gmail_com_application_default_credentials.json
+[debug] [2025-04-27T09:49:44.166Z] Checked if tokens are valid: true, expires at: 1745750981441
+[debug] [2025-04-27T09:49:44.167Z] Checked if tokens are valid: true, expires at: 1745750981441
+[debug] [2025-04-27T09:49:44.167Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/learning-5dd15/adminSdkConfig [none]
+[debug] [2025-04-27T09:49:45.078Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/learning-5dd15/adminSdkConfig 200
+[debug] [2025-04-27T09:49:45.079Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/learning-5dd15/adminSdkConfig {"projectId":"learning-5dd15","databaseURL":"https://learning-5dd15-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"learning-5dd15.firebasestorage.app"}
+[debug] [2025-04-27T09:49:45.150Z] [functions] Watching "C:\Users\dell\Desktop\File Management System\my-app\CourseApp\functions" for Cloud Functions...
+[debug] [2025-04-27T09:49:45.221Z] Validating nodejs source
+[debug] [2025-04-27T09:49:46.652Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "razorpay": "^2.9.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-04-27T09:49:46.652Z] Building nodejs source
+[debug] [2025-04-27T09:49:46.653Z] Failed to find version of module node: reached end of search path C:\Users\dell\Desktop\File Management System\my-app\CourseApp\functions\node_modules
+[warn] !  functions: Your requested "node" version "22" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2025-04-27T09:49:46.658Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-04-27T09:49:46.671Z] Found firebase-functions binary at 'C:\Users\dell\Desktop\File Management System\my-app\CourseApp\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8035
+
+[debug] [2025-04-27T09:49:48.503Z] Got response from /__/functions.yaml {"endpoints":{"createOrder":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"createOrder"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-04-27T09:49:52.625Z] [functions] Loaded functions definitions from source: createOrder.
+[debug] [2025-04-27T09:49:52.629Z] [functions[us-central1-createOrder]] http function initialized (http://127.0.0.1:5000/learning-5dd15/us-central1/createOrder).
+[info] i  functions: Loaded functions: createOrder 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage, eventarc, tasks 
