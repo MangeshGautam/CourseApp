@@ -15,8 +15,12 @@
   "main": "index.js",
   "dependencies": {
     "firebase-admin": "^12.6.0",
+<<<<<<< HEAD
     "firebase-functions": "^6.0.1",
     "razorpay": "^2.9.6"
+=======
+    "firebase-functions": "^6.0.1"
+>>>>>>> 241ad65918e80a2833f374dbe295eed396f5ef54
   },
   "devDependencies": {
     "eslint": "^8.15.0",

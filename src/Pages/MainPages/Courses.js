@@ -41,14 +41,22 @@ function Courses({setisContent , setFolders}) {
         <Grid container spacing={3}>
           {allCourses.map((item) => (
             <Grid item xs={12} sm={6} md={4} key={item.id}>
+<<<<<<< HEAD
               <div >
                 <CourseCard
                 item={item}
+=======
+              <div onClick={() => handleCourseClick(item)}>
+                <CourseCard
+>>>>>>> 241ad65918e80a2833f374dbe295eed396f5ef54
                   course_name={item.courseName}
                   description={item.description}
                   fees={item.price}
                   thumbnail={item.thumbnail}
+<<<<<<< HEAD
                   handleCourseClick={handleCourseClick}
+=======
+>>>>>>> 241ad65918e80a2833f374dbe295eed396f5ef54
                 />
               </div>
             </Grid>
